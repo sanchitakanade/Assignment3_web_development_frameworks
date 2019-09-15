@@ -22,12 +22,24 @@ p:first-of-type::first-letter {font-size: 30px;}
     margin-left:50px;
 }
 
-a[href^='http']:link {/*color:#004800;*/
-color:#594106;}
-a[href^='http']:visited {color:darkmagenta;}
+a[href^='http']:link {
+    color:#004800;
+    /*color:#594106;*/
+}
+a[href^='http']:visited {
+    color:darkmagenta;
+}
 a[href^='http']:hover, a[href^='http']:focus {
-color:#00526D;
+    color:#00526D;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
 }
 a[href^='http']:active {
-color:darkred;
+    color:darkred;
 }
+
+ul {list-style-type: none;}
+
+ul li:first-of-type   {color:blue;}
+ul li:last-of-type    {color:red;}
