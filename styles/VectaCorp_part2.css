@@ -1,3 +1,10 @@
+/*  Name: Sanchita Kanade
+	Instructor Name: Zak Ruvalcaba
+	Class: CS648.01 Modern Web Development Frameworks Fall 2019
+	File: VectaCorp_part2.css
+    Assignment No.: 3 
+*/
+
 body {
     width:960px;
     margin:0 0 0 20px;
@@ -6,22 +13,93 @@ body {
     line-height: 2em;
 }
 
-body ul:first-of-type      {
+/* style rules for navigation menu */
+ul:first-of-type      {
     list-style-type: none;
     padding: 0;
 }
-body ul:first-of-type li {padding: 0 0 0.25em 0;}
-body ul:first-of-type li a {
-    text-align: center;
-    color:red; 
-}
+ul:first-of-type li   { padding: 0 0 0.25em 0;}
+
+/* style rule for submenu in navigation menu on Solutions page */
+ul:first-of-type ul   { margin-left:40px;}
+
+/* style rules for all of the headings on each web page */
 h2 {
     color:#CC1C0D;
     border: 2px solid #929CA4;
     padding-left: 20px;
     background-color: #DFE3E6;
     border-radius:10px;
+    font-size:1.2em;
 }
-a {
-    color:#CC1C0D;
+
+/* style rule for all hyperlinks */
+a {color:#CC1C0D;}
+
+/* style rules for logo images for each solution on the main page and on the Solutions page */
+p img {
+    float:left;
+    margin-right:0.5em;
+    margin-top: 0.5em;
 }
+
+/* style rules for all ul elements in Solutions page that are adjacent to p and
+blockquote elements under client testimonials on main page. */
+blockquote, p + ul   { clear:left;}
+
+/* style rules for images on aboutus page */
+section img[src*='head'] {
+    float:left;
+    margin-right:1em;
+    margin-top:1em;
+    border:2px solid red;
+    border-radius:50px;
+}
+
+/* style rule to remove space between names and designations(under heading 'Management Team')
+ on aboutus page. */
+section p  { margin-top:0;}
+
+/** style rules for Pricing page **/
+
+/* style rules for four divs */
+section.pricing div {
+    float:left;
+    border: 1px solid black;
+    text-align:center;
+    margin: 20px 10px 20px 0;
+    width: 228px;
+    height: 270px;
+    padding-top: 20px;
+    border-radius:10px;
+}
+
+/* style rules for divider strips on the pricing labels*/
+#divider1, #divider2, #divider3, #divider4 {
+    width:228px;
+    height:10px;
+    display:block;
+    margin-top:15px;
+    margin-bottom: 0;
+}
+
+#divider1 {background-color: #CC1C0D;}
+#divider2 {background-color: #37A4A4;}
+#divider3 {background-color: #685288;}
+#divider4 {background-color: #000000;}
+
+/* style rule for pricing text in all divs */
+h3  { margin-top:10px;}
+
+/* style rules for last div with ENTERPRISE heading */
+section.pricing div:last-of-type {
+    padding-top:33px;
+    height:258px;
+}
+
+/** style rule for solution page **/
+#vretain, #vconvert, #vprospect { font-weight: bold;}
+
+/** style rule  for contact us page **/
+address { margin-bottom: 30px;}
+
